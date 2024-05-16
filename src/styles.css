@@ -57,7 +57,11 @@
     outline: none;
     margin-right: 8px;
     min-width: 150px;
+    color: white;
+}
 
+.formContainer select option{
+    background-color: #49C5E8;
 }
 
 .formContainer input::placeholder{
