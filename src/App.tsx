@@ -22,6 +22,7 @@ function App() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
+      setIsVisible(false);
       setIsLoading(true)
       const response = await axios.post('http://localhost:8080/api/v0', { n: input, set: selectedSet });
       setCards(response.data.cards);
@@ -30,6 +31,7 @@ function App() {
     }
     catch (error) {
       alert("Error from the server, try again later")
+      setIsLoading(false)
     }
   }
 
@@ -48,7 +50,7 @@ function App() {
         </select>
         <input
           type="number"
-          min={0}
+          min={20}
           max={1000}
           placeholder='Insert a number here'
           name="weight"
