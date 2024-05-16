@@ -10,8 +10,8 @@ Besides the README notes about the react application, i wanna make sure i explai
 
 To run it you will need to:
 
-run npm start to compile the react app in localhost:3000
-run python main.py (or run/start debugging in VSCode) to compile the python code in localhost:8080
+- run npm start to compile the react app in localhost:3000
+- run python main.py (or run/start debugging in VSCode) to compile the python code in localhost:8080
 
 I've made a simple form that allows you to select a set from the game "Magic: The Gathering" and enter the number of cards you want as an answer.
 
