@@ -1,8 +1,4 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Developer Notes
+# Developer Notes (please read)
 
 Hi guys!!
 
@@ -17,7 +13,7 @@ I've made a simple form that allows you to select a set from the game "Magic: Th
 
 This form will make a request to our python application and return the rarity of the open cards.
 
-The API I used was "https://magicthegathering.io". I decided to use this API because in the challenge you ask that the application on the back end be "time-consuming and computationally intensive" and as computing is a fast response area, a request to this API usually takes 3 to 4 seconds, and for the server that loads the API, it's a relatively heavy task.
+The API I used was "https://magicthegathering.io". I decided to use this API because in the challenge you ask that the application on the back end be "time-consuming and computationally intensive" and as computing is a fast response area, a request to this API usually takes 3 to 4 seconds, and for the server that loads the API, it's a relatively heavy task. (tbh it was the most time-consuming and computationally intensive API i could think in this range of 2 days, but i know how things can be heavier and longer if we're working with tons of data)
 
 If I've misunderstood anything about the task or how you expect it to be, please let me know.
 
