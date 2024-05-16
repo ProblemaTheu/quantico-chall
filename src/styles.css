@@ -1,0 +1,120 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#121212, #6e2c69);
+}
+
+.title{
+    font-size: 85px;
+    color: white;
+    animation: flipTitle 2s;
+}
+
+@keyframes flipTitle {
+    from {
+        transform: rotateX(90deg);
+    }
+    to{
+        transform: rotateX(0deg);
+    }
+}
+
+.infoText{
+    font-size: 20px;
+    color: white;
+    max-width: 1000px;
+    margin: 10px 0px;
+}
+
+.formContainer {
+    background-color: rgba(255,255,255, 0.2);
+    padding: 15px;
+    margin: 34px 0;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer input{
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    margin-right: 8px;
+    min-width: 300px;
+}
+
+.formContainer select{
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    outline: none;
+    margin-right: 8px;
+    min-width: 150px;
+
+}
+
+.formContainer input::placeholder{
+    color: #f1f1f180;
+}
+
+.buttonSearch{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.buttonSearch:hover{
+    transform: scale(1.2);
+}
+
+.main{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 500px;
+    border-radius: 8px;
+}
+
+.visible{
+    display: flex;
+}
+
+.main span{
+    margin: 8px 0px;
+    font-weight: bold;
+}
+
+@media(max-width: 940px){
+    .title{
+        font-size: 60px;
+    }
+    .infoText{
+        font-size: 15px;
+    }
+}
+
+.loading{
+    width: 50px;
+    height: 50px;
+    border: 6px solid #e5e5e5;
+    border-top-color: #51d4db;
+    border-radius: 50%;
+    animation: is-rotating 1s infinite;
+    margin-bottom: 34px;
+}
+
+@keyframes is-rotating {
+    to {
+        transform: rotate(1turn);
+    }
+}
