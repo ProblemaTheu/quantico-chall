@@ -2,6 +2,26 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Developer Notes
+
+Hi guys!!
+
+Besides the README notes about the react application, i wanna make sure i explain everthing i did in this challenge
+
+To run it you will need to:
+
+run npm start to compile the react app in localhost:3000
+run python main.py (or run/start debugging in VSCode) to compile the python code in localhost:8080
+
+I've made a simple form that allows you to select a set from the game "Magic: The Gathering" and enter the number of cards you want as an answer.
+
+This form will make a request to our python application and return the rarity of the open cards.
+
+The API I used was "https://magicthegathering.io". I decided to use this API because in the challenge you ask that the application on the back end be "time-consuming and computationally intensive" and as computing is a fast response area, a request to this API usually takes 3 to 4 seconds, and for the server that loads the API, it's a relatively heavy task.
+
+If I've misunderstood anything about the task or how you expect it to be, please let me know.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
