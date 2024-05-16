@@ -30,6 +30,20 @@ def process_task():
 
     return jsonify({'cards': cards}), 200
 
+def get_magic_cards(num_cards, selected_set):
+    cards = []
+    while len(cards) < num_cards:
+        response = requests.get(f'https://api.magicthegathering.io/v1/sets/{selected_set}/booster')
+        if response.status_code == 200:
+            data = response.json()
+            cards.extend(data.get('cards', []))
+        else:
+            return None
+    
+    rarity_count = count_rarities(cards[:num_cards])
+
+    return rarity_count
+
 def count_rarities(cards):
     rarity_count = {
         'Common': 0,
@@ -42,20 +56,6 @@ def count_rarities(cards):
         rarity = card.get('rarity', 'Unknown')
         if rarity in rarity_count:
             rarity_count[rarity] += 1
-
-    return rarity_count
-
-def get_magic_cards(num_cards, selected_set):
-    cards = []
-    while len(cards) < num_cards:
-        response = requests.get(f'https://api.magicthegathering.io/v1/sets/{selected_set}/booster')
-        if response.status_code == 200:
-            data = response.json()
-            cards.extend(data.get('cards', []))
-        else:
-            return None
-    
-    rarity_count = count_rarities(cards[:num_cards])
 
     return rarity_count
 
