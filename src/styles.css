@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(#121212, #6e2c69);
+    background: linear-gradient(#082939, #49C5E8);
 }
 
 .title{
@@ -83,6 +83,7 @@
     background-color: white;
     width: 500px;
     border-radius: 8px;
+    box-shadow: 1px 3px 8px rgba(0,0,0,0.5);
 }
 
 .visible{
@@ -92,6 +93,7 @@
 .main span{
     margin: 8px 0px;
     font-weight: bold;
+    color: #082939;
 }
 
 @media(max-width: 940px){
@@ -107,7 +109,7 @@
     width: 50px;
     height: 50px;
     border: 6px solid #e5e5e5;
-    border-top-color: #51d4db;
+    border-top-color: #49C5E8;
     border-radius: 50%;
     animation: is-rotating 1s infinite;
     margin-bottom: 34px;

@@ -37,7 +37,7 @@ function App() {
 
   return ( 
     <div className="container">
-      <h1 className="title">Quantico Challenge</h1>
+      <h1 className="title"><img src="https://static.wixstatic.com/media/2d5a52_3162e2f65a8a449b9462ae79fe0cab5e~mv2.png/v1/fill/w_695,h_146,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/QUANTICO%20LOGO_ALL%20BLUE_RGB.png" alt="" /></h1>
       <p className="infoText">in this application, you will select a number and a "Magic: The Gathering" Core Set then we will open booster cards from this set for you and in response, we will tell you how many cards of each rarity you have gotten!</p>
       <form className="formContainer" onSubmit={handleSubmit}>
       <select name="sets" id="sets" value={selectedSet} onChange={(e) => setSelectedSet(e.target.value)}>
@@ -51,7 +51,7 @@ function App() {
         <input
           type="number"
           min={20}
-          max={1000}
+          max={2000}
           placeholder='Insert a number here'
           name="weight"
           value={input}
