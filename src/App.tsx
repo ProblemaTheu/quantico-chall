@@ -53,7 +53,7 @@ function App() {
           min={20}
           max={2000}
           placeholder='Insert a number here'
-          name="weight"
+          name="n"
           value={input}
           onChange={(e) => setInput(Number(e.target.value))}
           required></input>
